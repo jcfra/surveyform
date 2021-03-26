@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Survey form</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class = "container">
+  <h1 id="title">Survey form</h1>
+	<div class="formulario">
+  <p id="description">This is a survey form for freeCodeCamp certification</p>
+  <form id="survey-form">
+    <label id="name-label"> Nome:<br/>
+      <input type="text" id="name" name="nome" placeholder="Enter your name">
+    </label>
+    <label id="email-label"> Email:<br/>
+      <input type="email" id="email" placeholder="Enter your email" name="email">
+    </label>
+    <label id="number-label"> Age: (optional)<br/>
+      <input type="number" id="number" min="1" max="120" placeholder="Age" name="age">
+    </label>
+    <label>
+    Which option best describes your current role?<br/>
+    <div class="cont1">
+      <select id="dropdown" name="role">
+        <option value="Analyst">Analyst</option>
+        <option value="Programmer">Programmer</option>
+        <option value="Manager">Manager</option>
+      </select>
+    </div>
+    </label>
+    <label>
+    Would you recommend freecodeCamp to a friend?<br/>
+    <div class="cont1">
+      <input type="radio" name="recommend" value="Definitely" id="Definitely">
+      <label for="Definitely" class="lblradio">Definitely</label>
+      <br/>
+      <input type="radio" name="recommend" value="Maybe" id="Maybe">
+      <label for="Maybe" class="lblradio">Maybe</label>
+      <br/>
+      <input type="radio" name="recommend" value="Notsure" id="Notsure">
+      <label for="Notsure" class="lblradio">Not sure</label>
+    </div>
+    </label>
+    <label> What is your favorite feature of freeCodeCamp?<br/>
+      <input list="features" class="cont1">
+      <datalist id="features">
+        <option value="Wiki"/>
+        <option value="Forum"/>
+        <option value="Aditional courses"/>
+      </datalist>
+    </label>
+    <label>
+    What would you like to see improved? (Check all that apply)<br/>
+    <div class="cont1">
+      <input type="checkbox" id="improvement1" name="improvement1" value="Front-end Projects">
+      <label for="improvement1" class="lblradio"> Front-end Projects</label>
+      <br>
+      <input type="checkbox" id="improvement2" name="improvement2" value="Back-end Projects">
+      <label for="improvement2" class="lblradio"> Back-end Projects</label>
+      <br>
+      <input type="checkbox" id="improvement3" name="improvement3" value="Data Visualization">
+      <label for="improvement3" class="lblradio"> Data Visualization</label>
+      <br>
+      <input type="checkbox" id="improvement4" name="improvement4" value="Challenges">
+      <label for="improvement4" class="lblradio"> Challenges</label>
+      <br>
+      <input type="checkbox" id="improvement5" name="improvement5" value="Open Source Community">
+      <label for="improvement5" class="lblradio"> Open Source Community</label>
+      <br>
+      <input type="checkbox" id="improvement6" name="improvement6" value="Gitter help rooms">
+      <label for="improvement6" class="lblradio"> Gitter help rooms</label>
+      <br>
+      <input type="checkbox" id="improvement7" name="improvement7" value="Videos">
+      <label for="improvement7" class="lblradio"> Videos</label>
+      <br>
+      <input type="checkbox" id="improvement8" name="improvement8" value="City Meetups">
+      <label for="improvement8" class="lblradio"> City Meetups</label>
+      <br>
+      <input type="checkbox" id="improvement9" name="improvement9" value="Wiki">
+      <label for="improvement9" class="lblradio"> Wiki</label>
+      <br>
+      <input type="checkbox" id="improvement10" name="improvement10" value="Forum">
+      <label for="improvement10" class="lblradio"> Forum</label>
+      <br>
+      <input type="checkbox" id="improvement11" name="improvement11" value="Additional courses">
+      <label for="improvement11" class="lblradio"> Additional courses</label>
+      <br>
+    </div>
+    </label>
+    <label> Any comments or suggestions?<br/>
+      <textarea name="comments" placeholder="Enter your comment here" class="cont1"></textarea>
+    </label>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+	</div>
+</div>
+</body>
+</html>

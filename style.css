@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 720px;
+	margin: 0px auto;
+	 border-radius: 20px;
+	background: #252546;
+	color: #fff;
+	padding-bottom: 20px;
+}
+h1 {
+  text-align: center;
+}
+.formulario {
+	margin-left: 50px;
+}
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+input, textarea {
+  width: 634px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+	margin-top: 2px;
+	color:#2699FB;
+}
+textarea {
+	height: 120px;
+	resize: none;
+}
+select {
+	margin-top: 2px;
+}
+input[type="checkbox"] {
+  width: 10px;
+  height: 10px;
+}
+input[type="radio"] {
+  width: 10px;
+  height: 10px;
+}
+input[type="submit"] {
+	background: #37AF65;
+		color:#fff;
+	font-weight: bold;
+	font-size: 24px;
+}
+.lblradio {
+  display: inline;
+}
+.cont1 {
+	margin-top: 2px;
+}
